@@ -104,11 +104,11 @@ if(WITH_TOOLS)
     add_subdirectory(tools)
 endif()
 
-install(PROGRAMS ${CMAKE_BINARY_DIR}/lib/libnodes.so DESTINATION ${CMAKE_INSTALL_LIBDIR}/CANdevStudio)
-install(PROGRAMS ${CMAKE_BINARY_DIR}/src/components/projectconfig/libprojectconfig.so DESTINATION ${CMAKE_INSTALL_LIBDIR}/CANdevStudio)
-install(PROGRAMS ${CMAKE_BINARY_DIR}/src/components/canrawsender/libcanrawsender.so DESTINATION ${CMAKE_INSTALL_LIBDIR}/CANdevStudio)
-install(PROGRAMS ${CMAKE_BINARY_DIR}/src/components/canrawview/libcanrawview.so DESTINATION ${CMAKE_INSTALL_LIBDIR}/CANdevStudio)
-install(PROGRAMS ${CMAKE_BINARY_DIR}/src/components/candevice/libcandevice.so DESTINATION ${CMAKE_INSTALL_LIBDIR}/CANdevStudio)
+install(PROGRAMS ${CMAKE_BINARY_DIR}/lib/libnodes.so DESTINATION ${LIB_INSTALL_DIR}/CANdevStudio)
+install(PROGRAMS ${CMAKE_BINARY_DIR}/src/components/projectconfig/libprojectconfig.so DESTINATION ${LIB_INSTALL_DIR}/CANdevStudio)
+install(PROGRAMS ${CMAKE_BINARY_DIR}/src/components/canrawsender/libcanrawsender.so DESTINATION ${LIB_INSTALL_DIR}/CANdevStudio)
+install(PROGRAMS ${CMAKE_BINARY_DIR}/src/components/canrawview/libcanrawview.so DESTINATION ${LIB_INSTALL_DIR}/CANdevStudio)
+install(PROGRAMS ${CMAKE_BINARY_DIR}/src/components/candevice/libcandevice.so DESTINATION ${LIB_INSTALL_DIR}/CANdevStudio)
 
 #Cannelloni is supported on Linux only
 if(UNIX)
